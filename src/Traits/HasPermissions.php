@@ -138,7 +138,7 @@ trait HasPermissions
             throw new PermissionDoesNotExist;
         }
 
-        return $this->hasDirectPermission($permission) || $this->hasPermissionViaRole($permission);
+        return $this->hasDirectPermission($permission);
     }
 
     /**
